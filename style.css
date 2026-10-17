@@ -17,25 +17,24 @@ body {
 
 /* Navbar menggunakan position sticky agar tetap terlihat
    di bagian atas saat halaman digulir */
-header {
+nav {
   background-color: #ffffff;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
-  
 }
 
 /* Flexbox, bukan Grid: tautan navigasi disusun dalam satu baris */
-header ul {
+nav ul {
   display: flex;
   flex-direction: row; /* Membuat navigasinya bertumpuk ke samping di HP */
   gap: 0.5rem;
   list-style: none;
-  align-items: center;
+  align-items:left;
 }
 
-header ul a {
+nav ul a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -44,7 +43,7 @@ header ul a {
 }
 
 /* Warna teks berubah saat kursor diarahkan ke tautan */
-header ul a:hover {
+nav ul a:hover {
   color: #0066cc;
 }
 
@@ -107,7 +106,7 @@ article p {
 }
 
 /* Footer dibedakan dari konten utama menggunakan warna gelap,
-   teks terang, dan perataan tengah */
+   teks terang, dan perataannya di tengah */
 footer {
   background-color: #0033667b;
   color: #fff;
