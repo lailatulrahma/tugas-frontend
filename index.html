@@ -2,12 +2,93 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Tugas 1A — buka Console (F12)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog Film</title>
+  <!-- Menghubungkan HTML dengan design di CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Semua hasil ada di <strong>Console</strong>: tekan F12 → tab Console.</p>
   <!-- Jangan ubah urutan: data.js harus dimuat sebelum logika.js -->
   <script src="data.js"></script>
   <script src="logika.js"></script>
+
+<header>
+  <nav>
+    <ul>
+        <a>Movieverse</a> 
+        <!-- mengarahkan ke bagian halaman berdasarkan ID elemen tujuan -->
+        <a href="#movies">Movies</a>
+        <a href="#about">About Us</a>
+      </ul>
+    </nav>
+</header>
+
+  <main>
+    <section>
+      <h1>Discover Your Next Favorite Film</h1>
+    </section>
+
+    <section id="movies" >
+      <h2>Movies</h2>
+      <!-- div hanya sebagai pembungkus kumpulan kartu film -->
+      <div class="daftar-kartu">
+         <!-- article digunakan karena setiap kartu berisi satu informasi film -->
+        <article>
+          
+          <h3>Harry Potter and the Prisoner of Azkaban</h3>
+          <p>Fantasi</p>
+          <p>Rating: 7.9</p>
+        </article>
+        <article>
+          
+          <h3>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h3>
+          <p>Fantasi</p>
+          <p>Rating: 6.9</p>
+        </article>
+        <article>
+          
+          <h3>One Piece</h3>
+          <p>Anime</p>
+          <p>Rating: 9.0</p>
+        </article>
+        <article>
+          
+          <h3>The Spiderwick Chronicles</h3>
+          <p>Fantasi</p>
+          <p>Rating: 6.5</p>
+        </article>
+        <article>
+          
+          <h3>Keluarga Cemara</h3>
+          <p>Drama Keluarga</p>
+          <p>Rating: 7.6</p>
+        </article>
+        <article>
+          
+          <h3>Ayah, Ini Arahnya ke Mana, Ya?</h3>
+          <p>Drama Keluarga</p>
+          <p>Rating: 7.0</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about"> 
+      <h2>About Us</h2>
+      <p>Movieverse is a place for movie lovers to explore stories from different worlds and genres. From magical fantasy adventures and exciting anime to heartwarming family dramas, discover a variety of films in one collection.</p>
+    </section>
+  </main>
+
+  <footer> 
+   <!-- div mengelompokkan isi footer agar mudah diatur nantinya di CSS -->
+   <div class="footer-content">
+      <p>&copy; 2026 Movieverse. Hak Cipta Dilindungi Undang-Undang.</p>
+      <!-- ul mengelompokkan tautan footer sebagai daftar -->
+      <ul>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat & Ketentuan</a>
+        <a href="#">Kontak Kami</a>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
