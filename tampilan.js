@@ -3,7 +3,7 @@ const wadahKartu = document.querySelector("#daftar-kartu");
 
 // 2. Satu item -> teks HTML satu kartu
 function buatKartu(item) {
-// label untuk item yang bernilai false, untuk kasus film maka menggunakan tersedia atau tidak tersedia 
+// label untuk item yang bernilai false, untuk kasus film maka menggunakan tersedia atau tidak tersedia  
 const label = item.tersedia ? "Tersedia" : "Tidak Tersedia";
 // Menggunakan backtick agar nilai properti film bisa dimasukkan ke dalam HTML menggunakan ${}
    return ` 
@@ -29,6 +29,7 @@ function tampilkan(daftar) {
 }
 
 // filter digunakan untuk menampilkan kartu sesuai dengan tombol kategori yang dibuat
+tampilkan(daftarItem);
 document.querySelector("#semua").addEventListener("click", function() {
   tampilkan(daftarItem);
 });
