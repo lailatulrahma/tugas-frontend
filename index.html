@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Jangan ubah urutan: data.js harus dimuat sebelum logika.js -->
-  <script src="data.js"></script>
-  <script src="logika.js"></script>
 
 <header>
   <nav>
@@ -30,45 +27,16 @@
 
     <section id="movies" >
       <h2>Movies</h2>
+      <!-- digunakan untuk membuat tombol kategori -->
+      <div class="filter-kategori">
+        <button id="semua">Semua</button>
+        <button id="fantasi">Fantasi</button>
+        <button id="drama">Drama Keluarga</button>
+        <button id="anime">Anime</button>
+      </div>
+
       <!-- div hanya sebagai pembungkus kumpulan kartu film -->
-      <div class="daftar-kartu">
-         <!-- article digunakan karena setiap kartu berisi satu informasi film -->
-        <article>
-          
-          <h3>Harry Potter and the Prisoner of Azkaban</h3>
-          <p>Fantasi</p>
-          <p>Rating: 7.9</p>
-        </article>
-        <article>
-          
-          <h3>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h3>
-          <p>Fantasi</p>
-          <p>Rating: 6.9</p>
-        </article>
-        <article>
-          
-          <h3>One Piece</h3>
-          <p>Anime</p>
-          <p>Rating: 9.0</p>
-        </article>
-        <article>
-          
-          <h3>The Spiderwick Chronicles</h3>
-          <p>Fantasi</p>
-          <p>Rating: 6.5</p>
-        </article>
-        <article>
-          
-          <h3>Keluarga Cemara</h3>
-          <p>Drama Keluarga</p>
-          <p>Rating: 7.6</p>
-        </article>
-        <article>
-          
-          <h3>Ayah, Ini Arahnya ke Mana, Ya?</h3>
-          <p>Drama Keluarga</p>
-          <p>Rating: 7.0</p>
-        </article>
+      <div id= "daftar-kartu" class="daftar-kartu">  
       </div>
     </section>
 
@@ -90,5 +58,9 @@
       </ul>
     </div>
   </footer>
+<!-- script ini harus di letakkan secara berurutan -->
+<script src="data.js"></script>
+<script src="logika.js"></script>
+<script src="tampilan.js"></script>  
 </body>
 </html>
