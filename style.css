@@ -141,6 +141,15 @@ footer {
   color: #fff;
 }
 
+.filter-kategori button{
+  gap: 25px;
+  color: #003366;
+  background-color: #f9fafc;
+  height: 20px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 6px;
+}
 
 /* Breakpoint 1: Tablet (dari 768px ke atas menjadi 2 Kolom) */
 @media (min-width: 768px) {
